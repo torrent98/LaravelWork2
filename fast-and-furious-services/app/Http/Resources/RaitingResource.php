@@ -24,7 +24,7 @@ class RaitingResource extends JsonResource
         return [
             'date_and_time' => $this->resource->date_and_time,
             'user' => new UserResource($this->resource->userkey),
-            'mechanic' => new ProviderResource($this->resource->providerskey),
+            'mechanic' => new MechanicResource($this->resource->mechanickey),
             'service' => new ServiceResource($this->resource->servicekey),
             'rating' => $this->resource->rating,
             'note' => $this->resource->note,

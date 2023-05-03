@@ -11,7 +11,7 @@ class MechanicRaitingController extends Controller
     public function index($mechanic_id)
     {
         $raiting = Raiting::get()->where('mechanic', $mechanic_id);
-        if (count($apprat) == 0)
+        if (count($raiting) == 0)
             return response()->json('Data not found', 404);
         return new RaitingCollection($raiting);
     }

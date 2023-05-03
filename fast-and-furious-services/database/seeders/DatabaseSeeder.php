@@ -5,10 +5,12 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use Illuminate\Database\Seeder;
+
 use \App\Models\User;
 use \App\Models\Mechanic;
 use \App\Models\Service;
 use \App\Models\Raiting;
+
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
